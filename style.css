@@ -195,7 +195,7 @@ address { font-style: normal; }
   background: rgba(12, 10, 9, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  box-shadow: 0 1px 0 rgba(244, 237, 228, 0.06);
+  box-shadow: none;
 }
 
 .header-inner {
