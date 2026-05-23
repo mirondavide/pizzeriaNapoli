@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DiNapoli — Masters Pizzaioli. La vera pizza napoletana, cotta a legna. Via Alberto Boccardi, 7 — Trieste." />
+  <title>DiNapoli — Masters Pizzaioli · Trieste</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <span class="loader__brand">DiNapoli</span>
+      <div class="loader__bar"><div class="loader__progress"></div></div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="DiNapoli — torna all'inizio">
+        <span class="logo-main">DiNapoli</span>
+        <span class="logo-sub">Masters Pizzaioli</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navigazione principale">
+        <a href="#storia" class="nav-link">Storia</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#orari" class="nav-link">Orari</a>
+        <a href="#contatti" class="nav-link">Contatti</a>
+      </nav>
+
+      <a href="tel:+390402601141" class="btn btn--cta" aria-label="Prenota un tavolo">
+        Prenota
+      </a>
+
+      <button class="hamburger" aria-label="Apri menu" aria-expanded="false" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <a href="#storia" class="mobile-nav__link">Storia</a>
+      <a href="#menu" class="mobile-nav__link">Menu</a>
+      <a href="#orari" class="mobile-nav__link">Orari</a>
+      <a href="#contatti" class="mobile-nav__link">Contatti</a>
+      <a href="tel:+390402601141" class="mobile-nav__cta">Prenota · +39 040 260 1141</a>
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home" aria-label="Sezione principale">
+    <div class="hero__bg" aria-hidden="true">
+      <img
+        src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1920&auto=format&fit=crop&q=80"
+        alt=""
+        class="hero__img"
+        loading="eager"
+      />
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__badge" aria-label="Valutazione 4.4 su 5 su Google Maps">
+        <span class="hero__badge-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;</span>
+        <span>4.4 Google Maps</span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="hero__title-line"><em>La vera pizza</em></span>
+        <span class="hero__title-line">napoletana,</span>
+        <span class="hero__title-line">cotta a legna</span>
+      </h1>
+
+      <p class="hero__subtitle">
+        Lunghe lievitazioni, farine selezionate e un forno a legna a 450° per portare a Trieste la tradizione partenopea.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#menu" class="btn btn--primary">Scopri il menu</a>
+        <a href="tel:+390402601141" class="btn btn--ghost">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          +39 040 260 1141
+        </a>
+        <a href="https://maps.google.com/?q=Via+Alberto+Boccardi+7+Trieste" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Via Boccardi 7, Trieste
+        </a>
+      </div>
+
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap" id="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>Vera Pizza Napoletana</span><span class="marquee-dot">&#10043;</span>
+        <span>Cotta nel Forno a Legna</span><span class="marquee-dot">&#10043;</span>
+        <span>Ingredienti Italiani</span><span class="marquee-dot">&#10043;</span>
+        <span>Trieste &middot; Via Boccardi 7</span><span class="marquee-dot">&#10043;</span>
+      </div>
+      <div class="marquee-content">
+        <span>Vera Pizza Napoletana</span><span class="marquee-dot">&#10043;</span>
+        <span>Cotta nel Forno a Legna</span><span class="marquee-dot">&#10043;</span>
+        <span>Ingredienti Italiani</span><span class="marquee-dot">&#10043;</span>
+        <span>Trieste &middot; Via Boccardi 7</span><span class="marquee-dot">&#10043;</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ABOUT -->
+  <section class="about" id="storia" aria-labelledby="about-title">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__text">
+          <span class="eyebrow">La nostra storia</span>
+          <h2 class="section-title" id="about-title">
+            Mani esperte,<br /><em>fuoco vivo</em>
+          </h2>
+          <p class="about__body">
+            I nostri maestri pizzaioli portano a Trieste l'autentica tradizione napoletana.
+            Ogni impasto viene steso a mano, con farine selezionate e una lievitazione naturale
+            di almeno 24 ore. La cottura avviene nel forno a legna a 450&deg;C per circa 90 secondi:
+            il risultato e una pizza dal cornicione alveolato, morbida al centro, con un profilo
+            aromatico unico.
+          </p>
+
+          <div class="about__stats">
+            <div class="stat-card">
+              <span class="stat-card__value">24h</span>
+              <span class="stat-card__label">Lievitazione</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__value">450&deg;</span>
+              <span class="stat-card__label">Forno a legna</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__value">100%</span>
+              <span class="stat-card__label">Made in Italy</span>
+            </div>
+          </div>
+
+          <p class="about__est">Est. Napoli &mdash; Tradizione &middot; Trieste</p>
+        </div>
+
+        <div class="about__images" aria-hidden="true">
+          <div class="about__img-main">
+            <img
+              src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=800&auto=format&fit=crop&q=80"
+              alt="Maestro pizzaiolo al lavoro"
+              loading="lazy"
+            />
+          </div>
+          <div class="about__img-accent">
+            <img
+              src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&auto=format&fit=crop&q=80"
+              alt="Ingredienti italiani"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- MENU -->
+  <section class="menu-section" id="menu" aria-labelledby="menu-title">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="eyebrow eyebrow--light">Il menu</span>
+        <h2 class="section-title section-title--light" id="menu-title">Le nostre <em>pizze</em></h2>
+        <p class="section-subtitle">
+          Oltre alle classiche, disponibili pizze speciali stagionali,
+          calzoni e pasta fresca artigianale.
+        </p>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card">
+          <span class="menu-card__num" aria-hidden="true">01</span>
+          <div class="menu-card__body">
+            <div class="menu-card__top">
+              <h3 class="menu-card__name">Margherita</h3>
+              <span class="menu-card__price">&euro;8</span>
+            </div>
+            <p class="menu-card__desc">Pomodoro San Marzano DOP, fior di latte, basilico, olio EVO</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <span class="menu-card__num" aria-hidden="true">02</span>
+          <div class="menu-card__body">
+            <div class="menu-card__top">
+              <h3 class="menu-card__name">Marinara</h3>
+              <span class="menu-card__price">&euro;7</span>
+            </div>
+            <p class="menu-card__desc">Pomodoro, aglio, origano di montagna, olio EVO</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <span class="menu-card__num" aria-hidden="true">03</span>
+          <div class="menu-card__body">
+            <div class="menu-card__top">
+              <h3 class="menu-card__name">Bufala</h3>
+              <span class="menu-card__price">&euro;11</span>
+            </div>
+            <p class="menu-card__desc">Pomodoro, mozzarella di bufala campana DOP, basilico</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <span class="menu-card__num" aria-hidden="true">04</span>
+          <div class="menu-card__body">
+            <div class="menu-card__top">
+              <h3 class="menu-card__name">Diavola</h3>
+              <span class="menu-card__price">&euro;10</span>
+            </div>
+            <p class="menu-card__desc">Pomodoro, mozzarella, salame piccante napoletano</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <span class="menu-card__num" aria-hidden="true">05</span>
+          <div class="menu-card__body">
+            <div class="menu-card__top">
+              <h3 class="menu-card__name">Quattro Formaggi</h3>
+              <span class="menu-card__price">&euro;11</span>
+            </div>
+            <p class="menu-card__desc">Mozzarella, gorgonzola, parmigiano, provola affumicata</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <span class="menu-card__num" aria-hidden="true">06</span>
+          <div class="menu-card__body">
+            <div class="menu-card__top">
+              <h3 class="menu-card__name">Capricciosa</h3>
+              <span class="menu-card__price">&euro;12</span>
+            </div>
+            <p class="menu-card__desc">Pomodoro, mozzarella, prosciutto cotto, funghi, carciofi, olive</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <span class="menu-card__num" aria-hidden="true">07</span>
+          <div class="menu-card__body">
+            <div class="menu-card__top">
+              <h3 class="menu-card__name">Crudo e Rucola</h3>
+              <span class="menu-card__price">&euro;12</span>
+            </div>
+            <p class="menu-card__desc">Pomodoro, mozzarella, prosciutto crudo, rucola, scaglie di grana</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <span class="menu-card__num" aria-hidden="true">08</span>
+          <div class="menu-card__body">
+            <div class="menu-card__top">
+              <h3 class="menu-card__name">Tartufo Nero</h3>
+              <span class="menu-card__price">&euro;14</span>
+            </div>
+            <p class="menu-card__desc">Mozzarella, crema di tartufo nero, funghi porcini</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="menu-footnote">Menu completo disponibile presso il locale</p>
+
+    </div>
+  </section>
+
+
+  <!-- TESTIMONIAL -->
+  <section class="testimonial" aria-label="Recensione cliente">
+    <div class="testimonial__bg" aria-hidden="true">
+      <img
+        src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&auto=format&fit=crop&q=80"
+        alt=""
+        class="testimonial__img"
+        loading="lazy"
+      />
+      <div class="testimonial__overlay"></div>
+    </div>
+
+    <div class="container testimonial__content">
+      <span class="testimonial__mark" aria-hidden="true">&ldquo;</span>
+      <blockquote class="testimonial__quote">
+        Una delle migliori pizze napoletane di Trieste.
+        Cornicione perfetto, atmosfera autentica.
+      </blockquote>
+      <cite class="testimonial__source">&mdash; Recensione Google Maps</cite>
+      <div class="testimonial__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    </div>
+  </section>
+
+
+  <!-- HOURS -->
+  <section class="hours" id="orari" aria-labelledby="hours-title">
+    <div class="container">
+      <div class="hours__grid">
+        <div class="hours__intro">
+          <span class="eyebrow">Orari</span>
+          <h2 class="section-title" id="hours-title">Vieni a<br /><em>trovarci</em></h2>
+          <p class="hours__desc">
+            Aperti per pranzo e cena. Per prenotazioni, consigliamo di chiamare
+            in anticipo, soprattutto nei weekend e giorni festivi.
+          </p>
+          <a href="tel:+390402601141" class="btn btn--primary">
+            +39 040 260 1141
+          </a>
+        </div>
+
+        <div class="hours__table-wrap">
+          <table class="hours__table" aria-label="Orari di apertura">
+            <thead>
+              <tr>
+                <th scope="col">Giorno</th>
+                <th scope="col">Pranzo</th>
+                <th scope="col">Cena</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Lunedi</td><td>12:00 &mdash; 15:00</td><td>18:30 &mdash; 23:30</td></tr>
+              <tr><td>Martedi</td><td>12:00 &mdash; 15:00</td><td>18:30 &mdash; 23:30</td></tr>
+              <tr><td>Mercoledi</td><td>12:00 &mdash; 15:00</td><td>18:30 &mdash; 23:30</td></tr>
+              <tr><td>Giovedi</td><td>12:00 &mdash; 15:00</td><td>18:30 &mdash; 23:30</td></tr>
+              <tr><td>Venerdi</td><td>12:00 &mdash; 15:00</td><td>18:30 &mdash; 23:30</td></tr>
+              <tr class="hours__row--weekend"><td>Sabato</td><td>12:00 &mdash; 15:00</td><td>18:30 &mdash; 23:30</td></tr>
+              <tr class="hours__row--weekend"><td>Domenica</td><td>12:00 &mdash; 15:00</td><td>18:30 &mdash; 23:30</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact" id="contatti" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info">
+          <span class="eyebrow eyebrow--light">Dove siamo</span>
+          <h2 class="section-title section-title--light" id="contact-title">
+            Trovaci a<br /><em>Trieste</em>
+          </h2>
+
+          <address class="contact__address">
+            <p>Via Alberto Boccardi, 7</p>
+            <p>34124 Trieste TS</p>
+          </address>
+
+          <a
+            href="https://maps.google.com/?q=Via+Alberto+Boccardi+7+Trieste"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact__directions"
+          >
+            Indicazioni <span aria-hidden="true">&rarr;</span>
+          </a>
+
+          <p class="contact__desc">
+            Atmosfera autentica, terrazza esterna, accoglienza familiare
+            nel cuore di Trieste
+          </p>
+
+          <a href="tel:+390402601141" class="contact__phone">+39 040 260 1141</a>
+        </div>
+
+        <div class="contact__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.0!2d13.773!3d45.651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b6b3f2e3a3a3a%3A0x3a3a3a3a3a3a3a3a!2sVia%20Alberto%20Boccardi%2C%207%2C%2034124%20Trieste%20TS!5e0!3m2!1sit!2sit!4v1600000000000!5m2!1sit!2sit"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Posizione di DiNapoli su Google Maps"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__name">DiNapoli</span>
+        <span class="footer__tagline">Masters Pizzaioli</span>
+      </div>
+      <div class="footer__divider" aria-hidden="true"></div>
+      <p class="footer__copy">&copy; 2026 &middot; Trieste, Italia</p>
+    </div>
+  </footer>
+
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
